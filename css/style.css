@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 5vmin;
+    background-color: black;
+    color: aqua;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 20vmin; 
+}
+
+h2 {
+    font-size: 18vmin;
+}
+
+h3 {
+    font-size: 16vmin;
+}
+
+h4 {
+    font-size: 14vmin;
+}
+
+h5 {
+    font-size: 12vmin;
+}
+
+.parallax-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.parallax-item h2 {
+  font-size: 18vmin;
+  text-transform: uppercase;
+  background-color: rgb(163, 44, 147);
+  padding: 6vmin;
+  border-radius: 10vmin;
+}
+
+.parallax-item:first-child {
+  background: url("/img/shaihalud.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax-item:nth-child(2) {
+  background: #3f0d2e;
+}
+
+.parallax-item:nth-child(3) {
+  background: url("/img/dumbhotel.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax Effect for DIV 3 */
+  min-height: 600px;
+}
+
+.parallax-item:nth-child(4) {
+  background: #182e47;
+}
+
+.parallox-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.parallox-item h2 {
+  font-size: 17vmin;
+  text-transform: uppercase;
+  background-color: rgb(43, 92, 63);
+  padding: 6vmin;
+  border-radius: 10vmin;
+}
+
+.parallox-item h5 {
+  font-size: 12vmin;
+  text-transform: uppercase;
+  background-color: rgb(22, 21, 26);
+  padding: 7vmin;
+  border-radius: 10vmin;
+}
+
+.parallox-item:first-child {
+  background: url("/img/babyhorse.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallox-item:nth-child(2) {
+  background: #052327;
+}
+.parallox-item:nth-child(3) {
+  background: url("/img/rover.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallox-item:nth-child(4) {
+  background: url("/img/hodflohgf.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax-item h2 {
+    font-size: 12vmin;
+  }
+  .parallox-item h2 {
+    font-size: 12vmin;
+  }
+  .parallax-item h3 {
+    font-size: 12vmin;
+  }
+  .parallox-item h3 {
+    font-size: 12vmin;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* slide up from bottom */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+    min-height: 100vh; /* Each section fills the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+#content-section-09 {
+    margin-bottom: 1400px;
+}
+
+img {
+   width: auto;
+   max-height: 480px; /* Or any fixed height */
+   object-fit: cover; /* or contain, fill, etc. */
+}
+
+.vignette-image {
+  position: relative; /* Needed for positioning the pseudo-element */
+  display: inline-block; 
+}
+
+.vignette-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
+  pointer-events: none; /* Allows interaction with content beneath */
+}
