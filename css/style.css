@@ -182,3 +182,66 @@ img {
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8); /* Adjust values as needed */
   pointer-events: none; /* Allows interaction with content beneath */
 }
+
+.steam-card {
+    margin-top: 200px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid #333; /* Dark border */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures content stays within rounded corners */
+    background-color: #1a1a1a; /* Dark background */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.steam-card-artwork {
+    width: 100%;
+    height: 95%; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #444;
+    background-image: url('/img/neoneventscalender-pdf2024.png');
+}
+
+.steam-card-foil-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: gold;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.steam-card-interactive {
+    transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.steam-card-interactive:hover {
+    transform: perspective(1200px) rotateX(18deg) rotateY(14deg) scale(1.12);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* Hidden link or image */
+.hidden-link {
+  opacity: 0.1;
+  transition: opacity 0.6s, filter 0.6s;
+  filter: blur(4px) grayscale(1);
+  cursor: pointer;
+  margin-bottom: 20vmin;
+}
+
+.hidden-link:hover {
+  opacity: 1;
+  filter: none;
+}
+
+/* glowing border on hover */
+.hidden-link:hover {
+  box-shadow: 0 0 16px 4px aqua;
+  outline: 2px solid aqua;
+}
