@@ -53,7 +53,7 @@ h5 {
 }
 
 .parallax-item:first-child {
-  background: url("/img/shaihalud.png");
+  background: url("../img/shaihalud.png");
   background-size: cover;
   background-position: center;
 }
@@ -63,7 +63,7 @@ h5 {
 }
 
 .parallax-item:nth-child(3) {
-  background: url("/img/dumbhotel.png");
+  background: url("../img/dumbhotel.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax Effect for DIV 3 */
@@ -100,7 +100,7 @@ h5 {
 }
 
 .parallox-item:first-child {
-  background: url("/img/babyhorse.png");
+  background: url("../img/babyhorse.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -109,13 +109,13 @@ h5 {
   background: #052327;
 }
 .parallox-item:nth-child(3) {
-  background: url("/img/rover.png");
+  background: url("../img/rover.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .parallox-item:nth-child(4) {
-  background: url("/img/hodflohgf.png");
+  background: url("../img/hodflohgf.png");
   background-size: cover;
   background-position: center;
 }
@@ -201,7 +201,7 @@ img {
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid #444;
-    background-image: url('/img/neoneventscalender-pdf2024.png');
+    background-image: url('../img/neoneventscalender-pdf2024.png');
 }
 
 .steam-card-foil-indicator {
