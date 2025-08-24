@@ -23,14 +23,14 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-window.addEventListener('scroll', () => {
+//window.addEventListener('scroll', () => {
   // If at the bottom, jump to the top
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-    setTimeout(() => {
-  window.scrollTo({ top: 0, behavior: 'auto' });
-}, 1889); //  adjust as needed
-  }
-});
+  //if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    //setTimeout(() => {
+  //window.scrollTo({ top: 0, behavior: 'auto' });
+//}, 1889); //  adjust as needed
+//  }
+//});
 
 // newlax 
 
