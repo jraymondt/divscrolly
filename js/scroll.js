@@ -1,3 +1,8 @@
+// H1 fade in on load
+window.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('loaded');
+});
+
 const sections = document.querySelectorAll('.hidden');
 
 const observerOptions = {
@@ -42,3 +47,13 @@ window.addEventListener("scroll", function () {
   parallax.style.backgroundPositionY = offset * 0.7 + "px";
   // DIV 1 background will move slower than other elements on scroll.
 });
+
+// Parallax Effect for DIV 2
+const parallaxItem = document.querySelector(".parallox");
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallaxItem.style.transform = "translateY(" + offset * 0.5 + "px)";
+  // DIV 2 will move at a moderate speed on scroll.
+});
+
+
